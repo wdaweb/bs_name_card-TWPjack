@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>homework-name_card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: 768px) {
+    .triangle::before {
+      display: block;
+      position: absolute;
+      left: -2%;
+      bottom: -13%;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 200px 0 0 200px;
+      border-color: transparent transparent transparent #ffffff;
+      filter: drop-shadow(2px -2px 1.5px #a3a3a3);
+      z-index: 10;
+    }
+
+    .triangle::after {
+      display: block;
+      position: absolute;
+      right: -2%;
+      top: -12%;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 200px 200px 0;
+      border-color: transparent #ffffff transparent transparent;
+      filter: drop-shadow(-2px 2px 1.5px #a3a3a3);
+      z-index: 10;
+    }
+  }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="container mt-5">
+    <div class="row ">
+      <div class="col triangle">
+        <div class="card d-flex flex-md-row">
+          <div class="bg-dark col-md-4 d-flex align-items-md-center">
+            <img class="img-fluid" src="./images/BIRD1.png">
+          </div>
+          <div class="card-body col-md-8 ml-md-5">
+            <h5 class="card-text mt-3 mb-1">Front-End Designer</h5>
+            <h1 class="card-title mb-1">Kaifu Chang</h1>
+            <h2 class="card-text mb-5">泰山職訓局</h2>
+            <p class="card-text">
+              住址 : 24302新北市泰山區貴子里致遠新村55之1號 <br>
+              電話 : 02-2901-8274<br>
+              E-Mail : Kaifu@example.cc <br>
+              網站 : http://www.kaifu.example.cc/<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script></script>
+
+</body>
+
+</html>
